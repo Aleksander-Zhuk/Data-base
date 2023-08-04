@@ -6,3 +6,8 @@
 
 INSERT INTO genre (genre) VALUES ('роман');
 INSERT INTO books (title_book,book_release_year,book_author,genre_id) VALUES ('На маяк',1927,'Вирджиния Вулф',1);
+
+INSERT INTO books (title_book,book_release_year,book_author) VALUES
+('Божественная комедия',1472,'Данте Алигьери'),
+('Гордость и предубеждение',1813,'Джейн Остен'),
+('Распад',1958,'Чинуа Ачебе');
