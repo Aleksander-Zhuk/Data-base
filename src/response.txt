@@ -11,3 +11,16 @@ INSERT INTO books (title_book,book_release_year,book_author) VALUES
 ('Божественная комедия',1472,'Данте Алигьери'),
 ('Гордость и предубеждение',1813,'Джейн Остен'),
 ('Распад',1958,'Чинуа Ачебе');
+
+
+делаю вот такой запрос
+SELECT books.*, genre.genre AS genre
+FROM books
+JOIN genre ON books.genre_id = genre.id
+WHERE books.id_book = 4
+
+потом 
+DELETE FROM genre
+WHERE id = 4;
+
+ничего не происходит удаляется и создается без проблем хотя должно возникать ошибка "foreign key constraint failed" (нарушение ограничения внешнего ключа), так как в таблице "books" останется ссылка на несуществующую строку в таблице "genre". 
