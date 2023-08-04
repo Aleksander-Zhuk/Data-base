@@ -4,5 +4,5 @@
 
       Но если в дольнешем расширять таблицу genres то тут будет смысол.
 
-INSERT INTO genre (id,genre) VALUES (1,'роман');
-INSERT INTO books (id_book,title_book,book_release_year,book_author,genre_id) VALUES (4,'На маяк',1927,'Вирджиния Вулф',1);
+INSERT INTO genre (genre) VALUES ('роман');
+INSERT INTO books (title_book,book_release_year,book_author,genre_id) VALUES ('На маяк',1927,'Вирджиния Вулф',1);
